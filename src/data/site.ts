@@ -49,13 +49,13 @@ export const navItems: readonly NavItem[] = [
 export const socialLinks: readonly SocialLink[] = [
   {
     label: "GitHub",
-    href: "https://github.com/MuhammadZain",
+    href: "https://github.com/mzaincodes",
     handle: "@MuhammadZain",
     icon: Github,
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/MuhammadZain",
+    href: "linkedin.com/in/muhammad-zain-25a602266/",
     handle: "/in/MuhammadZain",
     icon: Linkedin,
   },

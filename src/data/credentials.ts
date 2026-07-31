@@ -1,7 +1,7 @@
 import type { Credential } from "@/types";
 
 export const education = {
-  degree: "BSc Computer Science",
+  degree: "Bachelor in Computer Science (BSCS)",
   institution: "COMSATS University Lahore",
 } as const;
 
