@@ -27,19 +27,21 @@ export type SkillCategory = {
 
 export type ProjectCategory = "web" | "mobile" | "ai";
 
-export type ProjectStatus = "live" | "in-development" | "archived";
+export type ProjectLinks = {
+  /** Primary destination — the web app or marketing site. */
+  readonly demo?: string;
+  readonly github?: string;
+  readonly ios?: string;
+  readonly android?: string;
+};
 
 export type Project = {
   readonly id: string;
   readonly title: string;
   readonly description: string;
   readonly category: ProjectCategory;
-  readonly status: ProjectStatus;
   readonly year: string;
-  readonly links: {
-    readonly github?: string;
-    readonly demo?: string;
-  };
+  readonly links: ProjectLinks;
 };
 
 export type Credential = {
