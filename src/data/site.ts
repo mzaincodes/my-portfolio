@@ -50,13 +50,13 @@ export const socialLinks: readonly SocialLink[] = [
   {
     label: "GitHub",
     href: "https://github.com/mzaincodes",
-    handle: "@MuhammadZain",
+    handle: "@mzaincodes",
     icon: Github,
   },
   {
     label: "LinkedIn",
-    href: "linkedin.com/in/muhammad-zain-25a602266/",
-    handle: "/in/MuhammadZain",
+    href: "https://linkedin.com/in/muhammad-zain-25a602266",
+    handle: "/in/muhammad-zain",
     icon: Linkedin,
   },
 ] as const;

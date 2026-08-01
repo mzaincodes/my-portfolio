@@ -22,14 +22,6 @@ export function Projects() {
     [filter],
   );
 
-  const counts = React.useMemo(() => {
-    const map = new Map<Filter, number>([["all", projects.length]]);
-    for (const project of projects) {
-      map.set(project.category, (map.get(project.category) ?? 0) + 1);
-    }
-    return map;
-  }, []);
-
   return (
     <section id="projects" aria-labelledby="projects-heading" className="section-shell">
       <div className="container-page">
@@ -72,17 +64,7 @@ export function Projects() {
                         className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-accent to-accent-deep shadow-[0_6px_18px_-8px_var(--accent)]"
                       />
                     ) : null}
-                    <span className="relative flex items-center gap-1.5">
-                      {option.label}
-                      <span
-                        className={cn(
-                          "font-mono text-[0.5625rem] tabular-nums transition-colors duration-300",
-                          isActive ? "text-white/70" : "text-subtle",
-                        )}
-                      >
-                        {counts.get(option.id) ?? 0}
-                      </span>
-                    </span>
+                    <span className="relative">{option.label}</span>
                   </button>
                 );
               })}
